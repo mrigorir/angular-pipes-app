@@ -1,0 +1,63 @@
+
+<p-panel header="Pipes Básicos" class="p-2">
+  <p>Pipes incluidos en Angular - Usualmente en el Common Module</p>
+</p-panel>
+
+
+<div class="grid">
+  <div class="col-12 md:col-4">
+    <p-card header="Uppercase">
+      {{ nameLower | uppercase }}
+    </p-card>
+  </div>
+  <div class="col-12 md:col-4">
+    <p-card header="lowercase">
+      {{ nameUpper | lowercase }}
+    </p-card>
+  </div>
+  <div class="col-12 md:col-4">
+    <p-card header="titlecase">
+      {{ fullName | titlecase }}
+    </p-card>
+  </div>
+  <div class="col-12 md:col-6">
+    <p-card header="Dates">
+      <ol>
+        <li>fecha</li>
+        <li>fecha | date</li>
+        <li>fecha | date: 'short'</li>
+        <li>fecha | date: 'long'</li>
+        <li>fecha | date: 'MMMM'</li>
+        <li>{{ custumDate | date:'MMMM, dd, yyyy' }}</li>
+      </ol>
+      <hr>
+      <ol>
+        <li>fecha |date: 'long': 'GMT-6'</li>
+        <li>fecha |date: 'long': 'GMT-4'</li>
+        <li>fecha |date: 'long': '' : 'es-VE'</li>
+        <li>fecha |date: 'long': '' : 'en-UM'</li>
+        <li>fecha |date: 'long': '' : 'fr-CA'</li>
+      </ol>
+    </p-card>
+  </div>
+  <div class="col-12 md:col-6">
+    <p-card header="Date show cases">
+      <ol>
+        <li>{{ custumDate }}</li>
+        <li>{{ custumDate | date }}</li>
+        <li>{{ custumDate | date:'short' }}</li>
+        <li>{{ custumDate | date:'long' }}</li>
+        <li>{{ custumDate | date:'MMMM' }}</li>
+        <li>{{ custumDate | date:'MMMM, dd, yyyy' }}</li>
+      </ol>
+      <hr>
+      <ol>
+        <li>{{ custumDate |date: 'long': 'GMT-6' }}</li>
+        <li>{{ custumDate |date: 'long': 'GMT-4' }}</li>
+        <li>{{ custumDate |date: 'long': '' : 'es-VE'}}</li>
+        <li>{{ custumDate |date: 'long': '' : 'en-UM'}}</li>
+        <li>{{ custumDate |date: 'long': '' : 'fr-CA'}}</li>
+      </ol>
+    </p-card>
+  </div>
+</div>
