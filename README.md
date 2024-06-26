@@ -14,7 +14,7 @@
 ## Image Preview
 ![Screenshot Main Page](./src/assets/images/capture.png)
 
-## :star: [Live Demo](https://wonderful-blini-282bec.netlify.app/) :star:
+## :star: [Live Demo]() :star:
 
 
 ## Getting Started
@@ -60,7 +60,7 @@ To make sure the linters' checks using Github Actions work properly, you should 
 
 - I recommend the use of VS code as a code editor, but you can use any code editor.
 
-- Run in your terminal `npm start` OR `yarn start` to see the run the app in your default browser.
+- Run in your terminal `npm install`, then `npm start` OR `yarn start` to see the run the app in your default browser.
 
 - You should see the todo form ready to be used.
 
